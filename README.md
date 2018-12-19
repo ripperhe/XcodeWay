@@ -3,55 +3,49 @@ XcodeWay
 
 ![](Screenshots/Banner.png)
 
-## Description
+## 简介
 
-- An Xcode Source Editor Extension that helps navigating to many places easier
-- Available via `Editor -> XcodeWay`
+- XcodeWay 是一个Xcode Extension扩展，通过一系列的快捷方式提高生产效率
+- 可通过Xcode  `Editor -> XcodeWay`使用
 
 ![](https://user-images.githubusercontent.com/2284279/47280109-101ebb80-d5d5-11e8-854f-b2fb19452769.png)
 ![](Screenshots/demo.gif)
 
-## Features
+## 功能
 
-- [x] Go To Project Folder: Open the selected Xcode project folder in Finder
-- [x] Go To iTerm: Open the selected Xcode project folder in iTerm
-- [x] Go To DerivedData Folder: Check and open relative DerivedData if any, otherwise open global DerivedData
-- [x] Open GitHub: Check and open `git remote` in your default browser
-- [x] Open Current File in Github: Open the current file in GitHub
-- [x] Go To Provisioning Profiles Folder: Open in Finder
-- [x] Go To Themes Folder: Open in Finder
-- [x] Go To Archives Folder: Open in Finder
-- [x] Go To DeviceSupport Folder: Open in Finder
-- [x] Go To CodeSnippets Folder: Open in Finder
-- [x] Go To Document Folder: Go to current app Document folder for current simulator
+- [x] 一键打开工程根目录
+- [x] 一键打开终端并跳到工程根目录
+- [x] 一键打开DerivedData目录
+- [x] 一键打开Provisioning Profiles目录
+- [x] 一键打开Archives目录
+- [x] 一键打开DeviceSupport目录
+- [x] 一键Pod Install
+- [x] 一键Pod update
+- [x] 一键清除DerivedData
 
-## Extensible
+## 可扩展
 
-Although all common scenarios are covered, there's some more that you want to navigate to. Then just add your own by conforming to `Navigator`. Pull requests are welcome.
+如果你有其他好的想法，可实现Navigator协议，添加更多好用的功能.
 
 ```swift
 protocol Navigator {
-  func navigate()
-  var title: String { get }
+func navigate()
+var title: String { get }
 }
 ```
 
-## How to install
+## 如何安装
 
-- Download the latest binary from https://github.com/onmyway133/XcodeWay/releases
-- How to install https://medium.com/@onmyway133/install-xcode-8-source-editor-extension-10c9849e33b0
-- **Install scripts**: To fully use `XcodeWay`, you need to allow scripting, run this
+- 下载https://github.com/GesanTung/XcodeWay/releases
+- 编译运行
+- 系统偏好设置->扩展->Xcode Source Editor勾选XcodeWay
+- enjoy
 
-```sh
-curl -fsSL https://raw.githubusercontent.com/onmyway133/XcodeWay/master/install.sh | sh
 ```
 
-#### Troubleshooting
-
-- Stop `com.apple.dt.Xcode.AttachToXPCService`
-- Run `sudo /usr/libexec/xpccachectl` and restart Mac
-- It only works when a Swift file is selected
-- If the menu is disappeared or disabled, run again
+#### 感谢
+本项目fork自onmyway133
+https://github.com/onmyway133/XcodeWay
 
 ## Credit
 
@@ -60,3 +54,5 @@ curl -fsSL https://raw.githubusercontent.com/onmyway133/XcodeWay/master/install.
 ## Licence
 
 This project is released under the MIT license. See LICENSE.md.
+
+
