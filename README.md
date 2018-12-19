@@ -8,8 +8,8 @@ XcodeWay
 - XcodeWay 是一个Xcode Extension扩展，通过一系列的快捷方式提高生产效率
 - 可通过Xcode  `Editor -> XcodeWay`使用
 
-![](https://user-images.githubusercontent.com/2284279/47280109-101ebb80-d5d5-11e8-854f-b2fb19452769.png)
-![](Screenshots/demo.gif)
+![](Screenshots/F3264F08-0189-4888-9BD3-4FFF7BCEFF33.png)
+![](Screenshots/gif6.gif)
 
 ## 功能
 
