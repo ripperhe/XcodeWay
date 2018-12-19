@@ -49,6 +49,10 @@ on myXcodePath()
 myLibraryPath() & "/Developer/Xcode"
 end myXcodePath
 
+on myCoreSimulator()
+myLibraryPath() & "/Developer/CoreSimulator"
+end myCoreSimulator
+
 on myUserDataPath()
 myXcodePath() & "/UserData"
 end myUserDataPath
@@ -79,8 +83,32 @@ end tell
 end myOpenFolder
 
 on myOpeniTerm(myPath)
-tell application "Finder"
-do shell script "open -a iTerm " & quoted form of myPath
+tell application "Terminal"
+if not (exists window 1) then reopen
+activate
+set currentTab to do script ("cd " & quoted form of myPath)
+end tell
+end myOpeniTerm
+
+-- Do
+
+on myPodInstall()
+set myPath to myProjectPath()
+tell application "Terminal"
+if not (exists window 1) then reopen
+activate
+do script ("cd " & quoted form of myPath) in window 1
+do script ("pod install") in window 1
+end tell
+end myOpeniTerm
+
+on myPodUpdate()
+set myPath to myProjectPath()
+tell application "Terminal"
+if not (exists window 1) then reopen
+activate
+do script ("cd " & quoted form of myPath) in window 1
+do script ("pod upadte") in window 1
 end tell
 end myOpeniTerm
 
@@ -116,7 +144,7 @@ set myPath to myProjectPath()
 myOpenFolder(myPath)
 end myOpenProjectFolder
 
-on myOpeniTermForCurrentProject()
+on myOpenTermnalForCurrentProject()
 set myPath to myProjectPath()
 myOpeniTerm(myPath)
 end myOpeniTermForCurrentProject
@@ -130,33 +158,6 @@ myOpenFolder(myXcodePath() & "/DerivedData/")
 end if
 end myOpenDerivedDataFolder
 
-on myGitHubURL()
-set myPath to myProjectPath()
-set myConsoleOutput to (do shell script "cd " & quoted form of myPath & "; git remote -v")
-set myRemote to myGetRemote(myConsoleOutput)
-set myUrl to (do shell script "cd " & quoted form of myPath & "; git config --get remote." & quoted form of myRemote & ".url")
-set myUrlWithOutDotGit to myRemoveSubString(myUrl, ".git")
-end myGitHubURL
-
-on myOpenGitHub()
-set myUrl to myGitHubUrlOnMaster()
-open location myUrl
-end myOpenGitHub
-
-on myGitHubUrlOnMaster()
-set gitHubPath to myGitHubURL()
-set myUrl to gitHubPath & "/blob/master"
-end myGitHubUrlOnMaster
-
-on myOpenFileInGitHub()
-set currentFilePath to myCurrentFilePath()
-set projectPath to myProjectPath()
-set gitHubPath to myGitHubUrlOnMaster()
-set relativePath to myRemoveSubString(currentFilePath, projectPath)
-set fullUrl to gitHubPath & relativePath
-open location fullUrl
-end myOpenFileInGitHub
-
 on myOpenDocument()
 set command1 to "cd ~/Library/Developer/CoreSimulator/Devices/;"
 set command2 to "cd `ls -t | head -n 1`/data/Containers/Data/Application;"
@@ -165,6 +166,17 @@ set command4 to "open ."
 do shell script command1 & command2 & command3 & command4
 end myOpenDocument
 
+-- Clean
+
+on myCleanDerivedData()
+set myRelativePath to myProjectPath() & "/DerivedData"
+if myFolderExists(myRelativePath) then
+else
+set myRelativePath to myXcodePath() & "/DerivedData"
+end if
+do shell script "rm -rf " & myRelativePath
+end myCleanDerivedData
+
 on myOpenAbout()
-open location "https://github.com/onmyway133/XcodeWay"
+open location "https://github.com/GesanTung/XcodeWay"
 end myOpenAbout

@@ -12,16 +12,14 @@ struct MenuManager {
 
   static let navigators: [Navigator] = [
     ProjectFolderNavigator(),
-    iTermNavigator(),
     DerivedDataFolderNavigator(),
-    GitHubNavigator(),
-    OpenFileInGitHubNavigator(),
     ProvisioningProfileFolderNavigator(),
-    ThemeFolderNavigator(),
     ArchivesFolderNavigator(),
     DeviceSupportFolderNavigator(),
-    CodeSnippetFolderNavigator(),
-    DocumentNavigator(),
+    DoTermnalOpen(),
+    DoPodInstall(),
+    DoPodUpdate(),
+    CleanDerivedData(),
     AboutNavigator()
   ]
 

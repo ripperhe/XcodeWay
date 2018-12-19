@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18AF447021CA13F7004E2CB1 /* DoPodInstall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF446F21CA13F7004E2CB1 /* DoPodInstall.swift */; };
+		18AF447221CA1454004E2CB1 /* DoPodUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF447121CA1454004E2CB1 /* DoPodUpdate.swift */; };
+		18C5F24921CA1B66006FCC4A /* CleanDerivedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5F24821CA1B66006FCC4A /* CleanDerivedData.swift */; };
 		D21658CD1F97908200F3506F /* DerivedDataNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */; };
-		D21658CF1F97918800F3506F /* GitHubNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21658CE1F97918800F3506F /* GitHubNavigator.swift */; };
 		D220F3501F97841F00F460CC /* ProjectFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */; };
 		D29D398B1F97DA7B0093FFAA /* AboutNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */; };
 		D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */; };
 		D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */; };
 		D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221931F97528200C45949 /* ScriptRunner.swift */; };
 		D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */; };
-		D2C329232046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C329222046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift */; };
 		D2C329252046EA1C00DB04F0 /* Open Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C329242046EA1C00DB04F0 /* Open Document.swift */; };
 		D2D07D6C1F97460400416315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6B1F97460400416315 /* AppDelegate.swift */; };
 		D2D07D6E1F97460400416315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6D1F97460400416315 /* ViewController.swift */; };
@@ -26,11 +27,10 @@
 		D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D821F9746AF00416315 /* SourceEditorCommand.swift */; };
 		D2D07D881F9746AF00416315 /* XcodeWay.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2D07D7D1F9746AF00416315 /* XcodeWay.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */; };
-		D2D07D961F9746E500416315 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */; };
 		D2D07D971F9746E500416315 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D901F9746E500416315 /* Navigator.swift */; };
 		D2D07D991F9746E500416315 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D931F9746E500416315 /* Helper.swift */; };
 		D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D941F9746E500416315 /* MenuManager.swift */; };
-		D2F0B1151F978C36007A1945 /* iTermNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0B1141F978C36007A1945 /* iTermNavigator.swift */; };
+		D2F0B1151F978C36007A1945 /* DoTermnalOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0B1141F978C36007A1945 /* DoTermnalOpen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18AF446F21CA13F7004E2CB1 /* DoPodInstall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoPodInstall.swift; sourceTree = "<group>"; };
+		18AF447121CA1454004E2CB1 /* DoPodUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoPodUpdate.swift; sourceTree = "<group>"; };
+		18C5F24821CA1B66006FCC4A /* CleanDerivedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanDerivedData.swift; sourceTree = "<group>"; };
 		D21062FE1D4224B80005A1A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivedDataNavigator.swift; sourceTree = "<group>"; };
-		D21658CE1F97918800F3506F /* GitHubNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNavigator.swift; sourceTree = "<group>"; };
 		D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFolderNavigator.swift; sourceTree = "<group>"; };
 		D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutNavigator.swift; sourceTree = "<group>"; };
 		D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivesFolderNavigator.swift; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 		D2B221931F97528200C45949 /* ScriptRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRunner.swift; sourceTree = "<group>"; };
 		D2B221961F976D7B00C45949 /* Script */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Script; sourceTree = "<group>"; };
 		D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetFolderNavigator.swift; sourceTree = "<group>"; };
-		D2C329222046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFileInGitHubNavigator.swift; sourceTree = "<group>"; };
 		D2C329242046EA1C00DB04F0 /* Open Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Open Document.swift"; sourceTree = "<group>"; };
 		D2D07D691F97460400416315 /* XcodeWayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D07D6B1F97460400416315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,11 +84,10 @@
 		D2D07D841F9746AF00416315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2D07D851F9746AF00416315 /* XcodeWayExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeWayExtensions.entitlements; sourceTree = "<group>"; };
 		D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileFolderNavigator.swift; sourceTree = "<group>"; };
-		D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
 		D2D07D901F9746E500416315 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		D2D07D931F9746E500416315 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		D2D07D941F9746E500416315 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
-		D2F0B1141F978C36007A1945 /* iTermNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTermNavigator.swift; sourceTree = "<group>"; };
+		D2F0B1141F978C36007A1945 /* DoTermnalOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTermnalOpen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,19 +166,19 @@
 		D2D07D8D1F9746E500416315 /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
-				D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */,
-				D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */,
 				D2D07D901F9746E500416315 /* Navigator.swift */,
+				D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */,
 				D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */,
 				D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */,
 				D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */,
 				D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */,
-				D2F0B1141F978C36007A1945 /* iTermNavigator.swift */,
 				D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */,
-				D21658CE1F97918800F3506F /* GitHubNavigator.swift */,
-				D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */,
-				D2C329222046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift */,
 				D2C329242046EA1C00DB04F0 /* Open Document.swift */,
+				D2F0B1141F978C36007A1945 /* DoTermnalOpen.swift */,
+				18AF446F21CA13F7004E2CB1 /* DoPodInstall.swift */,
+				18AF447121CA1454004E2CB1 /* DoPodUpdate.swift */,
+				18C5F24821CA1B66006FCC4A /* CleanDerivedData.swift */,
+				D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -245,12 +245,12 @@
 				TargetAttributes = {
 					D2D07D681F97460400416315 = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = T78DK947F2;
+						DevelopmentTeam = SWM5MN65PP;
 						ProvisioningStyle = Automatic;
 					};
 					D2D07D7C1F9746AF00416315 = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = T78DK947F2;
+						DevelopmentTeam = SWM5MN65PP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -306,7 +306,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp \"${SRCROOT}/XcodeWayExtensions/Script/XcodeWayScript.scpt\" \"/Users/khoa/Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions\"";
+			shellScript = "cp \"${SRCROOT}/XcodeWayExtensions/Script/XcodeWayScript.scpt\" \"${HOME}/Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -329,19 +329,19 @@
 				D2D07D991F9746E500416315 /* Helper.swift in Sources */,
 				D2C329252046EA1C00DB04F0 /* Open Document.swift in Sources */,
 				D2D07D971F9746E500416315 /* Navigator.swift in Sources */,
+				18AF447221CA1454004E2CB1 /* DoPodUpdate.swift in Sources */,
 				D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */,
 				D29D398B1F97DA7B0093FFAA /* AboutNavigator.swift in Sources */,
-				D21658CF1F97918800F3506F /* GitHubNavigator.swift in Sources */,
+				18AF447021CA13F7004E2CB1 /* DoPodInstall.swift in Sources */,
 				D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */,
-				D2F0B1151F978C36007A1945 /* iTermNavigator.swift in Sources */,
+				D2F0B1151F978C36007A1945 /* DoTermnalOpen.swift in Sources */,
 				D220F3501F97841F00F460CC /* ProjectFolderNavigator.swift in Sources */,
 				D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */,
 				D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */,
 				D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */,
-				D2C329232046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift in Sources */,
 				D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */,
 				D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */,
-				D2D07D961F9746E500416315 /* ThemeFolderNavigator.swift in Sources */,
+				18C5F24921CA1B66006FCC4A /* CleanDerivedData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +487,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T78DK947F2;
+				DEVELOPMENT_TEAM = SWM5MN65PP;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XcodeWayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -510,7 +510,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T78DK947F2;
+				DEVELOPMENT_TEAM = SWM5MN65PP;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XcodeWayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -531,7 +531,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T78DK947F2;
+				DEVELOPMENT_TEAM = SWM5MN65PP;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XcodeWayExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
@@ -553,7 +553,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T78DK947F2;
+				DEVELOPMENT_TEAM = SWM5MN65PP;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XcodeWayExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
