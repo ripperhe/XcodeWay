@@ -306,7 +306,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp \"${SRCROOT}/XcodeWayExtensions/Script/XcodeWayScript.scpt\" \"${HOME}/Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions\"\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
