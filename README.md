@@ -39,6 +39,7 @@ var title: String { get }
 - 下载https://github.com/GesanTung/XcodeWay/releases
 - 编译运行
 - 系统偏好设置->扩展->Xcode Source Editor勾选XcodeWay
+- curl -fsSL https://raw.githubusercontent.com/GesanTung/XcodeWay/master/install.sh | sh
 - enjoy
 
 ```
