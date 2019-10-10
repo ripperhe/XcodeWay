@@ -69,6 +69,20 @@ var title: String { get }
 	```
 4. 完成
 
+## 添加快捷键
+
+快捷键按照以下方法设置，可自行设置喜欢的快捷键。
+
+![](./keybinding.png)
+
+红色感叹号是因为其他快捷键有冲突，我这里不影响使用。强迫症的话，可以换成其他快捷键，或者把冲突解决掉。
+
+只要软件中添加过的 navigator menu 在这里都会有快捷键设置的command，即便是卸载了也会有。如果想要删除某一条已经废弃的 command，可以去以下目录里的 plist 文件中手动删除，**删除的时候要谨慎**，别删除了。
+
+```
+~/Library/Developer/Xcode/UserData/KeyBindings/Default.idekeybindings
+```
+
 ## 感谢
 
 本项目fork自
