@@ -10,6 +10,14 @@
 		18AF447021CA13F7004E2CB1 /* DoPodInstall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF446F21CA13F7004E2CB1 /* DoPodInstall.swift */; };
 		18AF447221CA1454004E2CB1 /* DoPodUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF447121CA1454004E2CB1 /* DoPodUpdate.swift */; };
 		18C5F24921CA1B66006FCC4A /* CleanDerivedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5F24821CA1B66006FCC4A /* CleanDerivedData.swift */; };
+		C914FA8E234F243600EDA9D9 /* OOTerminalNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914FA8D234F243600EDA9D9 /* OOTerminalNavigator.swift */; };
+		C914FA95234F25B800EDA9D9 /* OOPodInstall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914FA93234F25B800EDA9D9 /* OOPodInstall.swift */; };
+		C914FA96234F25B800EDA9D9 /* OOProjectFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914FA94234F25B800EDA9D9 /* OOProjectFolderNavigator.swift */; };
+		C914FA98234F262E00EDA9D9 /* OOAboutNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914FA97234F262E00EDA9D9 /* OOAboutNavigator.swift */; };
+		C9566812234F138F006C4C5E /* iTermNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9566811234F138F006C4C5E /* iTermNavigator.swift */; };
+		C9566814234F13BB006C4C5E /* GitHubNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9566813234F13BA006C4C5E /* GitHubNavigator.swift */; };
+		C9566816234F13DB006C4C5E /* OpenFileInGitHubNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9566815234F13DB006C4C5E /* OpenFileInGitHubNavigator.swift */; };
+		C9566818234F1431006C4C5E /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9566817234F1431006C4C5E /* ThemeFolderNavigator.swift */; };
 		D21658CD1F97908200F3506F /* DerivedDataNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */; };
 		D220F3501F97841F00F460CC /* ProjectFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */; };
 		D29D398B1F97DA7B0093FFAA /* AboutNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */; };
@@ -61,6 +69,14 @@
 		18AF446F21CA13F7004E2CB1 /* DoPodInstall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoPodInstall.swift; sourceTree = "<group>"; };
 		18AF447121CA1454004E2CB1 /* DoPodUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoPodUpdate.swift; sourceTree = "<group>"; };
 		18C5F24821CA1B66006FCC4A /* CleanDerivedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanDerivedData.swift; sourceTree = "<group>"; };
+		C914FA8D234F243600EDA9D9 /* OOTerminalNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOTerminalNavigator.swift; sourceTree = "<group>"; };
+		C914FA93234F25B800EDA9D9 /* OOPodInstall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OOPodInstall.swift; sourceTree = "<group>"; };
+		C914FA94234F25B800EDA9D9 /* OOProjectFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OOProjectFolderNavigator.swift; sourceTree = "<group>"; };
+		C914FA97234F262E00EDA9D9 /* OOAboutNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OOAboutNavigator.swift; sourceTree = "<group>"; };
+		C9566811234F138F006C4C5E /* iTermNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTermNavigator.swift; sourceTree = "<group>"; };
+		C9566813234F13BA006C4C5E /* GitHubNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubNavigator.swift; sourceTree = "<group>"; };
+		C9566815234F13DB006C4C5E /* OpenFileInGitHubNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenFileInGitHubNavigator.swift; sourceTree = "<group>"; };
+		C9566817234F1431006C4C5E /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
 		D21062FE1D4224B80005A1A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivedDataNavigator.swift; sourceTree = "<group>"; };
 		D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFolderNavigator.swift; sourceTree = "<group>"; };
@@ -109,6 +125,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C914FA8C234F237500EDA9D9 /* NavigatorOO */ = {
+			isa = PBXGroup;
+			children = (
+				C914FA94234F25B800EDA9D9 /* OOProjectFolderNavigator.swift */,
+				C914FA8D234F243600EDA9D9 /* OOTerminalNavigator.swift */,
+				C914FA93234F25B800EDA9D9 /* OOPodInstall.swift */,
+				C914FA97234F262E00EDA9D9 /* OOAboutNavigator.swift */,
+			);
+			path = NavigatorOO;
+			sourceTree = "<group>";
+		};
 		D21062DF1D4224620005A1A8 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +182,7 @@
 				D2B221961F976D7B00C45949 /* Script */,
 				D2D07D911F9746E500416315 /* Helper */,
 				D2D07D8D1F9746E500416315 /* Navigator */,
+				C914FA8C234F237500EDA9D9 /* NavigatorOO */,
 				D2D07D801F9746AF00416315 /* SourceEditorExtension.swift */,
 				D2D07D821F9746AF00416315 /* SourceEditorCommand.swift */,
 				D2D07D841F9746AF00416315 /* Info.plist */,
@@ -168,17 +196,21 @@
 			children = (
 				D2D07D901F9746E500416315 /* Navigator.swift */,
 				D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */,
+				C9566817234F1431006C4C5E /* ThemeFolderNavigator.swift */,
 				D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */,
 				D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */,
 				D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */,
 				D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */,
+				C9566811234F138F006C4C5E /* iTermNavigator.swift */,
 				D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */,
+				C9566813234F13BA006C4C5E /* GitHubNavigator.swift */,
+				D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */,
+				C9566815234F13DB006C4C5E /* OpenFileInGitHubNavigator.swift */,
 				D2C329242046EA1C00DB04F0 /* Open Document.swift */,
 				D2F0B1141F978C36007A1945 /* DoTermnalOpen.swift */,
 				18AF446F21CA13F7004E2CB1 /* DoPodInstall.swift */,
 				18AF447121CA1454004E2CB1 /* DoPodUpdate.swift */,
 				18C5F24821CA1B66006FCC4A /* CleanDerivedData.swift */,
-				D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -245,12 +277,12 @@
 				TargetAttributes = {
 					D2D07D681F97460400416315 = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = SWM5MN65PP;
+						DevelopmentTeam = 7V7KE8TM86;
 						ProvisioningStyle = Automatic;
 					};
 					D2D07D7C1F9746AF00416315 = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = SWM5MN65PP;
+						DevelopmentTeam = 7V7KE8TM86;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +292,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -325,15 +358,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9566812234F138F006C4C5E /* iTermNavigator.swift in Sources */,
 				D2D07D811F9746AF00416315 /* SourceEditorExtension.swift in Sources */,
 				D21658CD1F97908200F3506F /* DerivedDataNavigator.swift in Sources */,
 				D2D07D991F9746E500416315 /* Helper.swift in Sources */,
+				C9566816234F13DB006C4C5E /* OpenFileInGitHubNavigator.swift in Sources */,
 				D2C329252046EA1C00DB04F0 /* Open Document.swift in Sources */,
 				D2D07D971F9746E500416315 /* Navigator.swift in Sources */,
 				18AF447221CA1454004E2CB1 /* DoPodUpdate.swift in Sources */,
 				D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */,
+				C914FA98234F262E00EDA9D9 /* OOAboutNavigator.swift in Sources */,
+				C914FA96234F25B800EDA9D9 /* OOProjectFolderNavigator.swift in Sources */,
+				C9566818234F1431006C4C5E /* ThemeFolderNavigator.swift in Sources */,
 				D29D398B1F97DA7B0093FFAA /* AboutNavigator.swift in Sources */,
 				18AF447021CA13F7004E2CB1 /* DoPodInstall.swift in Sources */,
+				C9566814234F13BB006C4C5E /* GitHubNavigator.swift in Sources */,
+				C914FA95234F25B800EDA9D9 /* OOPodInstall.swift in Sources */,
 				D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */,
 				D2F0B1151F978C36007A1945 /* DoTermnalOpen.swift in Sources */,
 				D220F3501F97841F00F460CC /* ProjectFolderNavigator.swift in Sources */,
@@ -343,6 +383,7 @@
 				D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */,
 				D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */,
 				18C5F24921CA1B66006FCC4A /* CleanDerivedData.swift in Sources */,
+				C914FA8E234F243600EDA9D9 /* OOTerminalNavigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +529,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SWM5MN65PP;
+				DEVELOPMENT_TEAM = 7V7KE8TM86;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XcodeWayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -511,7 +552,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SWM5MN65PP;
+				DEVELOPMENT_TEAM = 7V7KE8TM86;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XcodeWayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -532,7 +573,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SWM5MN65PP;
+				DEVELOPMENT_TEAM = 7V7KE8TM86;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XcodeWayExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
@@ -554,7 +595,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SWM5MN65PP;
+				DEVELOPMENT_TEAM = 7V7KE8TM86;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = XcodeWayExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";

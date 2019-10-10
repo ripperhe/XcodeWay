@@ -11,16 +11,10 @@ import Foundation
 struct MenuManager {
 
   static let navigators: [Navigator] = [
-    ProjectFolderNavigator(),
-    DerivedDataFolderNavigator(),
-    ProvisioningProfileFolderNavigator(),
-    ArchivesFolderNavigator(),
-    DeviceSupportFolderNavigator(),
-    DoTermnalOpen(),
-    DoPodInstall(),
-    DoPodUpdate(),
-    CleanDerivedData(),
-    AboutNavigator()
+    OOProjectFolderNavigator(),
+    OOTerminalNavigator(),
+    OOPodInstall(),
+    OOAboutNavigator(),
   ]
 
   static func find(commandIdentifier: String) -> Navigator? {
@@ -33,3 +27,24 @@ struct MenuManager {
     return nil
   }
 }
+
+/**
+ 原作者的 navigator
+ ProjectFolderNavigator(),
+ iTermNavigator(),
+ DerivedDataFolderNavigator(),
+ GitHubNavigator(),
+ OpenFileInGitHubNavigator(),
+ ProvisioningProfileFolderNavigator(),
+ ThemeFolderNavigator(),
+ ArchivesFolderNavigator(),
+ DeviceSupportFolderNavigator(),
+ CodeSnippetFolderNavigator(),
+ DocumentNavigator(),
+ AboutNavigator(),
+ 
+ DoTermnalOpen(),
+ DoPodInstall(),
+ DoPodUpdate(),
+ CleanDerivedData(),
+ */

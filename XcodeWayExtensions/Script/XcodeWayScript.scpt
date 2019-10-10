@@ -83,7 +83,7 @@ end tell
 end myOpenFolder
 
 on myOpeniTerm(myPath)
-tell application "Terminal"
+tell application "iTerm"
 if not (exists window 1) then reopen
 activate
 set currentTab to do script ("cd " & quoted form of myPath)
@@ -94,7 +94,7 @@ end myOpeniTerm
 
 on myPodInstall()
 set myPath to myProjectPath()
-tell application "Terminal"
+tell application "iTerm"
 if not (exists window 1) then reopen
 activate
 do script ("cd " & quoted form of myPath) in window 1
@@ -104,7 +104,7 @@ end myOpeniTerm
 
 on myPodUpdate()
 set myPath to myProjectPath()
-tell application "Terminal"
+tell application "iTerm"
 if not (exists window 1) then reopen
 activate
 do script ("cd " & quoted form of myPath) in window 1
@@ -178,5 +178,5 @@ do shell script "rm -rf " & myRelativePath
 end myCleanDerivedData
 
 on myOpenAbout()
-open location "https://github.com/GesanTung/XcodeWay"
+open location "https://github.com/ripperhe/XcodeWay"
 end myOpenAbout
