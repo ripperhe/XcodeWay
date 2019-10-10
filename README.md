@@ -61,8 +61,8 @@ var title: String { get }
 ## 如何卸载 uninstall
 
 1. 彻底关闭 Xcode
-2. 在 Finder 中全局搜索 `XcodeWayApp.app`
-3. 将项目移到废纸篓
+2. 在 Finder 中全局搜索 `XcodeWayApp.app`，并删除
+3. 删除 `~/Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions/XcodeWayScript.scpt`
 4. 完成
 
 ## 感谢
