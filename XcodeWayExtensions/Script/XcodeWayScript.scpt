@@ -83,10 +83,8 @@ end tell
 end myOpenFolder
 
 on myOpeniTerm(myPath)
-tell application "iTerm"
-if not (exists window 1) then reopen
-activate
-set currentTab to do script ("cd " & quoted form of myPath)
+tell application "Finder"
+do shell script "open -a iTerm " & quoted form of myPath
 end tell
 end myOpeniTerm
 
@@ -94,23 +92,23 @@ end myOpeniTerm
 
 on myPodInstall()
 set myPath to myProjectPath()
-tell application "iTerm"
+tell application "Terminal"
 if not (exists window 1) then reopen
 activate
 do script ("cd " & quoted form of myPath) in window 1
 do script ("pod install") in window 1
 end tell
-end myOpeniTerm
+end myPodInstall
 
 on myPodUpdate()
 set myPath to myProjectPath()
-tell application "iTerm"
+tell application "Terminal"
 if not (exists window 1) then reopen
 activate
 do script ("cd " & quoted form of myPath) in window 1
 do script ("pod upadte") in window 1
 end tell
-end myOpeniTerm
+end myPodUpdate
 
 -- Open
 
