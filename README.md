@@ -72,6 +72,10 @@ var title: String { get }
 * onmyway133/XcodeWay <https://github.com/onmyway133/XcodeWay>
 * GesanTung/XcodeWay <https://github.com/GesanTung/XcodeWay>
 
+## Credit
+
+- Icon https://www.emojione.com/
+
 ## Licence
 
 This project is released under the MIT license. See LICENSE.md.
