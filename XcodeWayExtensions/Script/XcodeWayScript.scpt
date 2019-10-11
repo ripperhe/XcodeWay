@@ -90,20 +90,39 @@ end myOpeniTerm
 
 -- Do
 
+-- on myPodInstall()
+-- set myPath to myProjectPath()
+-- tell application "iTerm"
+-- 	try
+-- 		class of current window
+-- 		tell current window
+-- 			create tab with default profile
+-- 		end tell
+-- 		-- display dialog "有window"
+-- 	on error errText number errNum
+-- 		create window with default profile
+-- 		-- display dialog "没有window"
+-- 		-- 没有 window 就创建 window
+-- 	end try
+-- 	tell current window
+-- 		activate
+-- 		tell current session
+-- 			write text ("cd " & myPath)
+-- 			write text "pod install"
+-- 		end tell
+-- 	end tell
+-- end tell
+-- end myPodInstall
+
 on myPodInstall()
 set myPath to myProjectPath()
+myOpeniTerm(myPath)
 tell application "iTerm"
-	try
-		class of current window
-		tell current window
-			create tab with default profile
-		end tell
-		-- display dialog "有window"
-	on error errText number errNum
-		create window with default profile
-		-- display dialog "没有window"
-		-- 没有 window 就创建 window
-	end try
+    -- 下面两个方法都是为了一点点延时；貌似 open iTerm 的命令需要一点时间，不延时的话，后面的命令将无效
+    -- 1. 让电脑叫一声
+    beep 1
+    -- 2. 代码暂停一秒
+    -- delay 1
 	tell current window
 		activate
 		tell current session
@@ -113,6 +132,7 @@ tell application "iTerm"
 	end tell
 end tell
 end myPodInstall
+
 
 on myPodUpdate()
 set myPath to myProjectPath()
