@@ -92,21 +92,49 @@ end myOpeniTerm
 
 on myPodInstall()
 set myPath to myProjectPath()
-tell application "Terminal"
-if not (exists window 1) then reopen
-activate
-do script ("cd " & quoted form of myPath) in window 1
-do script ("pod install") in window 1
+tell application "iTerm"
+	try
+		class of current window
+		tell current window
+			create tab with default profile
+		end tell
+		-- display dialog "有window"
+	on error errText number errNum
+		create window with default profile
+		-- display dialog "没有window"
+		-- 没有 window 就创建 window
+	end try
+	tell current window
+		activate
+		tell current session
+			write text ("cd " & myPath)
+			write text "pod install"
+		end tell
+	end tell
 end tell
 end myPodInstall
 
 on myPodUpdate()
 set myPath to myProjectPath()
-tell application "Terminal"
-if not (exists window 1) then reopen
-activate
-do script ("cd " & quoted form of myPath) in window 1
-do script ("pod upadte") in window 1
+tell application "iTerm"
+	try
+		class of current window
+		tell current window
+			create tab with default profile
+		end tell
+		-- display dialog "有window"
+	on error errText number errNum
+		create window with default profile
+		-- display dialog "没有window"
+		-- 没有 window 就创建 window
+	end try
+	tell current window
+		activate
+		tell current session
+			write text ("cd " & myPath)
+			write text "pod update"
+		end tell
+	end tell
 end tell
 end myPodUpdate
 

@@ -13,17 +13,11 @@ XcodeWay
 
 ## 功能
 
-最新功能需运行尝试，文档不是最新
-
 - [x] 一键打开工程根目录
-- [x] 一键打开终端并跳到工程根目录
-- [x] 一键打开DerivedData目录
-- [x] 一键打开Provisioning Profiles目录
-- [x] 一键打开Archives目录
-- [x] 一键打开DeviceSupport目录
-- [x] 一键Pod Install
-- [x] 一键Pod update
-- [x] 一键清除DerivedData
+- [x] 一键打开 `iTerm2`
+- [x] 一键 `pod install`
+
+其他不常用的功能都被我删除了~~~
 
 ## 可扩展
 
@@ -45,6 +39,12 @@ var title: String { get }
 	
 	```
 	curl -fsSL https://raw.githubusercontent.com/ripperhe/XcodeWay/master/install.sh | sh
+	```
+	
+	脚本最终会下载到以下路径
+	
+	```
+	~/Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions
 	```
 5. 开始使用
 
