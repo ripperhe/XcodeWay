@@ -44,7 +44,7 @@ var title: String { get }
 	脚本最终会下载到以下路径
 	
 	```
-	~/Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions
+	~/Library/Application Scripts/com.ripperhe.XcodeWayApp.XcodeWayExtensions
 	```
 5. 开始使用
 
@@ -62,10 +62,10 @@ var title: String { get }
 
 1. 彻底关闭 Xcode
 2. 在 Finder 中全局搜索 `XcodeWayApp.app`，并删除
-3. 删除 `~/Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions/XcodeWayScript.scpt`
+3. 删除 `~/Library/Application Scripts/com.ripperhe.XcodeWayApp.XcodeWayExtensions/XcodeWayScript.scpt`
 	
 	```sh
-	$ rm ~/Library/Application\ Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions/XcodeWayScript.scpt
+	$ rm ~/Library/Application\ Scripts/com.ripperhe.XcodeWayApp.XcodeWayExtensions/XcodeWayScript.scpt
 	```
 4. 完成
 
